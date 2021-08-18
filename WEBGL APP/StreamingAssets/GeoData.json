@@ -1,0 +1,291 @@
+[ 
+  {
+    "Name": "Landuse",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "polygon",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Buildings"
+    ],
+    "MapModifiers": [
+      {
+        "eventName":"changeMaterial"
+      }
+    ],
+    "Colours": [
+      {
+        "color": "#d9d9d9",
+        "label": "",
+        "type": [
+          ""
+        ]
+      },
+      {
+        "color": "#b00020",
+        "label": "commercial",
+        "type": [
+          "commercial", "office"
+        ]
+      },
+      {
+        "color": "#EDE700",
+        "label": "residential",
+        "type": [
+          "residential", "apartments", "house", "residence", "residence", "apartment", "residences"
+        ]
+      },
+      {
+        "color": "#455A64",
+        "label": "industrial",
+        "type": [
+          "industrial", "factory"
+        ]
+      },
+      {
+        "color": "#E040FB",
+        "label": "retail",
+        "type": [
+          "retail", "shop"
+        ]
+      },
+      {
+        "color": "#0C28ED",
+        "label": "educational",
+        "type": [
+          "university",
+          "school",
+          "college"
+        ]
+      },
+      {
+        "color": "#262626",
+        "label": "construction",
+        "type": [
+          "construction"
+        ]
+      },
+      {
+        "color": "#90A4AE",
+        "label": "religion",
+        "type": [
+          "church",
+          "mosque", "cathedral", "temple"
+        ]
+      },
+      {
+        "color": "#03DAC6",
+        "label": "transportation",
+        "type": [
+          "transportation", "station"
+        ]
+      },
+      {
+        "color": "#448AFF",
+        "label": "hospital",
+        "type": [
+          "hospital",
+          "clinic"
+        ]
+      }
+    ],
+    "Description": "Building landuse classification based on OSM data. (attribute: type)",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 0
+  },
+  {
+    "Name": "Green_Spaces",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "polygon",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Green_Spaces"
+    ],
+    "Colours": [
+      {
+        "color": "#86BCAE",
+        "label": ""
+      }
+    ],
+    "Description": "Green spaces based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  },  
+  {
+    "Name": "Roads",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "line",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Roads"
+    ],
+    "Colours": [
+      {
+        "color": "#808080",
+        "label": "",
+        "type":[""]
+      },
+      {
+        "color": "#424242",
+        "label": "primary",
+        "type":["primary","primary_link","trunk", "trunk_link"]
+      },   
+      {
+        "color": "#757575",
+        "label": "secondary",
+        "type":["secondary","motorway"]
+      },
+      {
+        "color": "#BDBDBD",
+        "label": "street",
+        "type":["street"]
+      }
+    ],
+    "Description": "Road network based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  },
+  {
+    "Name": "Pedestrian_Paths",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "line",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Pedestrian_Roads_and_Paths"
+    ],
+    "Colours": [
+      {
+        "color": "#FFD95D",
+        "label": ""
+      }
+    ],
+    "Description": "Pedestrian path network based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  },
+  {
+    "Name": "Cycleways",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "line",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Cycleways"
+    ],
+    "Colours": [
+      {
+        "color": "#F2BFFF",
+        "label": ""
+      }
+    ],
+    "Description": "Cycleways based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  },
+  {
+    "Name": "Water",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "polygon",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Water"
+    ],
+    "Colours": [
+      {
+        "color": "#82BACF",
+        "label": ""
+      }
+    ],
+    "Description": "Green spaces based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  },
+  {
+    "Name": "Transit_Stops",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "polygon",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Transit_Stops"
+    ],      
+    "Colours": [
+      {
+        "color": "#d9d9d9",
+        "label": "",
+        "type": [
+          ""
+        ]
+      },
+      {
+        "color": "#b00020",
+        "label": "bus",
+        "type": [
+          "bus"
+        ]
+      },
+      {
+        "color": "#EDE700",
+        "label": "tram",
+        "type": [
+          "tram"
+        ]
+      },
+      {
+        "color": "#455A64",
+        "label": "rail",
+        "type": [
+          "rail", "metro_rail"
+        ]
+      },
+      {
+        "color": "#E040FB",
+        "label": "bicycle",
+        "type": [
+          "bicycle"
+        ]
+      },
+      {
+        "color": "#0C28ED",
+        "label": "ferry",
+        "type": [
+          "ferry"
+        ]
+      }      
+    ],
+    "Description": "Transit stop classification based on OSM data. (attribute: type)",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 0
+  },
+  {
+    "Name": "Historic_Sites",
+    "Source": "Mapbox",
+    "Category": "Context",
+    "MapID": "mapbox.mapbox-streets-v8",
+    "Type": "point",
+    "Structure": "P",
+    "UnityMapFeatures": [
+      "Historic_Sites"
+    ],
+    "Colours": [
+      {
+        "color": "#B3E9FF",
+        "label": ""
+      }
+    ],
+    "Description": " based on OSM data.",
+    "URL": "https://www.openstreetmap.org/#map=6/54.910/-3.432",
+    "MapIndex": 1
+  }
+]

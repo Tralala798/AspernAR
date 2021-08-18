@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>InFraReD</title>
+  <link rel="icon" type="image/png" href="Images/favicon/logo.png" sizes="128x128">
+  <meta name="description" content="InFraReD webApp">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- <title>InfraredDev</title> -->
+  <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="Styles/main.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button class="hidden" id="logo"></button>
+    <div id="geocoder" class="geocoder"></div>
+  </nav>
+
+  <!-- ---------- Unity Container ---------- -->
+  <div class="webgl">
+    <div id="gameContainer"></div>
+    <div id="loader">
+      <div class="logo">
+        <h1 class="project-title">InFraReD</h1>
+      </div>
+      <div class="spinner"></div>
+      <div class="progress">
+        <div class="full"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- Front-end ---------- -->
+  <div id='map'></div>
+  <div id="connection-icon" class="online"></div>
+
+  <section class="main-grid">
+
+
+    <section class="grid-footer">
+      <input type="radio" name="mode" id="context-mode-btn" class="mode-checkbox" checked>
+      <label id="context-label" for="context-mode-btn">Context </label>
+      <input type="radio" name="mode" class="mode-checkbox" id="designAnalysis-mode-btn">
+      <label id="designAnalysis-label" for="designAnalysis-mode-btn">Design&Analysis</label>
+      <input type="radio" name="mode" class="mode-checkbox" id="explore-mode-btn">
+      <label id="explore-label" for="explore-mode-btn">Explore</label>
+    </section>
+
+
+    <section class="grid-right" title="Context Mode" id="context-mode">
+      <button class="icon-button" id="set-site-btn" title="set site"></button>
+      <button class="icon-button" id="define-context-btn" title="define context"></button>
+      <button class="icon-button" id="map-layers-btn" title="inspect geolocated data"></button>
+      <ul id="data-layers-container" class="hidden">
+       
+      </ul>
+      <button class="icon-button" id="load-btn" title="load project"></button>
+      <button class="icon-button" id="import-btn" title="import project"></button>
+
+
+      <!-- data layer template -->
+      <template id="data-layer-template">
+        <li class="data-layer">
+          <button class="data-layer-toggle" index="0" id="layer-id"state="off"></button>
+           <label id="label" for="layer-id" title="label">layer</label>
+           <div id="legend"></div>
+         </li>
+      </template>
+      <!-- legend template -->
+      <template id="discrete-legend-value-template">
+        <div class="rect" id="rec" value="0">
+          <label for="rec" id="label"></label>
+        </div>
+      </template>
+    </section>
+
+  </section>
+
+  <!-- Main scripts-->
+  <script src="Build/UnityLoader.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script type="text/javascript" defer src="JS/unityLoader.js"></script>
+  <!-- <script type="text/javascript" defer src="JS/main.js"></script> -->
+  <script type="text/javascript" defer src="JS/map.js"></script>
+</body>
+<!-- MAPBOX -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+<!-- MAPBOX GEOCODER -->
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet'
+  href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+
+
+
+
+</html>
